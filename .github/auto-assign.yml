@@ -1,0 +1,13 @@
+addAssignees: false       # Disable assigning assignees
+addReviewers: true        # Enable assigning reviewers
+
+reviewers:                # List of potential reviewers
+  - IvanBorislavovDimitrov
+  - theghost5800
+  - ikasarov
+  - vkalapov
+  - s-yonkov-yonkov
+  - Yavor16
+
+numberOfReviewers: 2      # Assign exactly 2 reviewers
+randomReviewer: true      # Randomly select the reviewers
