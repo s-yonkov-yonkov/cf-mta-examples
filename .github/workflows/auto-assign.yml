@@ -1,0 +1,17 @@
+name: Auto Assign
+
+on:
+  pull_request:
+    types: [opened, reopened] # Trigger the action when a PR is opened or reopened
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Auto-assign reviewers and assignees
+        uses: kentaro-m/auto-assign@v1.2.2
+        with:
+          config: '.github/auto_assign.yml' # Path to the configuration file
